@@ -16,7 +16,7 @@ public class DepartmentTest extends SpringUtils{
 		DepartmentDao departmentDao = (DepartmentDao)context.getBean("departmentDao");
 		DepartmentQuery baseQuery = new DepartmentQuery();
 		int count = departmentDao.getCount(baseQuery);
-		System.out.println(count);
+		System.out.println(count);  rrrrrr
 	}
 	
 	@Test
