@@ -27,11 +27,5 @@
 		 -->
 		<property name="name" type="java.lang.String" length="20"></property>
 		<property name="description" length="50"></property>
-		<!-- <set name="users" inverse="true">
-			<key>
-				<column name="did"></column>
-			</key>
-			<one-to-many class="com.itheima.gyl.domain.basedata.User"/>
-		</set> -->
 	</class>
 </hibernate-mapping>

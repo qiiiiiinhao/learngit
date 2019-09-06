@@ -66,9 +66,4 @@ public interface BaseDao<T>{
 	 * 查询某一张表的总的记录数
 	 */
 	public int getCount(final BaseQuery baseQuery);
-	
-	/**
-	 * 计算某一个订单号的最大值
-	 */
-	public String getMax();
 }

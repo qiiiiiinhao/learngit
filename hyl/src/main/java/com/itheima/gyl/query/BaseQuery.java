@@ -36,7 +36,7 @@ public abstract class BaseQuery {
 	/**
 	 * 把页面上表单中的表单元素封装成map了
 	 */
-	public Map<String, Object> keyValues = new HashMap<String, Object>();
+	private Map<String, Object> keyValues = new HashMap<String, Object>();
 	
 	public Map<String, Object> getKeyValues() {
 		return keyValues;

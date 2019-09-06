@@ -2,22 +2,6 @@ package com.itheima.gyl.base.dao.impl;
 
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
-import java.util.Collection;
-import java.util.Set;
-
-import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
-
-import org.hibernate.metadata.ClassMetadata;
-import org.springframework.orm.hibernate3.HibernateTemplate;
-
-import com.itheima.gyl.base.dao.BaseDao;
-import com.itheima.gyl.query.BaseQuery;
-import com.itheima.gyl.query.PageResult;
-
-
-import java.io.Serializable;
-import java.lang.reflect.ParameterizedType;
 import java.sql.SQLException;
 import java.util.Collection;
 import java.util.Map;
@@ -33,8 +17,12 @@ import org.springframework.orm.hibernate3.HibernateCallback;
 import org.springframework.orm.hibernate3.HibernateTemplate;
 import org.springframework.stereotype.Repository;
 
+import com.itheima.gyl.base.dao.BaseDao;
+import com.itheima.gyl.query.BaseQuery;
+import com.itheima.gyl.query.PageResult;
 
-@Repository(value="baseDao")
+
+
 public class BaseDaoImpl<T> implements BaseDao<T>{
 	private final Class classt;
 	/**
@@ -139,11 +127,5 @@ public class BaseDaoImpl<T> implements BaseDao<T>{
 				return count.intValue();
 			}
 		});
-	}
-
-	@Override
-	public String getMax() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 }
