@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.ui.theme" value="simple"></constant>
+	<constant name="struts.devMode" value="true"/>
+	<!-- 
+		基础数据
+	 -->
+	<include file="com/itheima11/gyl/struts/basedata/struts-department.xml"></include>
+	<include file="com/itheima11/gyl/struts/basedata/struts-user.xml"></include>
+	<include file="com/itheima11/gyl/struts/basedata/struts-product.xml"></include>
+	
+	<!--    
+		权限模块
+	 -->
+	<include file="com/itheima11/gyl/struts/privilege/struts-menuitem.xml"></include>
+	<include file="com/itheima11/gyl/struts/privilege/struts-role.xml"></include>
+	<include file="com/itheima11/gyl/struts/privilege/struts-privilege.xml"></include>
+	
+	<!-- 
+		转发
+	 -->
+	 <include file="com/itheima11/gyl/struts/forward/struts-forward.xml"></include>
+	 
+	 <!-- 
+	 	登录
+	  -->
+	 <include file="com/itheima11/gyl/struts/login/struts-login.xml"></include>
+	 
+	 <!-- 
+	 	声明拦截器
+	  -->
+	 <include file="com/itheima11/gyl/struts/interceptor/struts-interceptor.xml"></include>
+
+	 <!-- 
+	 	销售
+	  -->
+	 <include file="com/itheima11/gyl/struts/business/xsgl/struts-xsydd.xml"></include>
+	 <include file="com/itheima11/gyl/struts/business/xsgl/struts-xsdd.xml"></include> 
+	 <include file="com/itheima11/gyl/struts/business/xsgl/struts-xsfhd.xml"></include> 
+</struts>
+	

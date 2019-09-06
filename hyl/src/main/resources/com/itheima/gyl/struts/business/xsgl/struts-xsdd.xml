@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="xsdd" namespace="/" extends="struts-default">
+		<action name="xsddAction_*" method="{1}" class="xsddAction">
+			<result name="xsddList">WEB-INF/jsp/gyl/business/xsgl/xsdd/list.jsp</result>
+			<result name="addUI">WEB-INF/jsp/gyl/business/xsgl/xsdd/add.jsp</result>
+			<result name="updateUI">WEB-INF/jsp/gyl/business/xsgl/xsdd/update.jsp</result>
+			<result name="business_error">business_error.jsp</result>
+			<result type="chain" name="chain">
+				<param name="actionName">xsddAction</param>
+  				<param name="method">showxsdd</param>
+			</result>
+		</action>
+	</package>
+	
+	<package name="xsddjson" namespace="/" extends="json-default">
+		<action name="xsddJSONAction_*" method="{1}" class="xsddAction">
+			<result type="json"></result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="xsfhd" namespace="/" extends="struts-default">
+		<action name="xsfhdAction_*" method="{1}" class="xsfhdAction">
+			<result name="xsfhdList">WEB-INF/jsp/gyl/business/xsgl/xsfhd/list.jsp</result>
+			<result name="addUI">WEB-INF/jsp/gyl/business/xsgl/xsfhd/add.jsp</result>
+			<result type="chain" name="chain">
+				<param name="actionName">xsfhdAction</param>
+  				<param name="method">showxsfhd</param>
+			</result>
+		</action>
+	</package>
+</struts>
